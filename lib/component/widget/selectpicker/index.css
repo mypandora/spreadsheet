@@ -1,0 +1,55 @@
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mypandora-spreadsheet-selectpicker {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  z-index: 10;
+  width: auto;
+}
+.mypandora-spreadsheet-selectpicker ul {
+  min-width: 100px;
+  margin: 0;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.65);
+  background: #fff;
+  list-style: none;
+}
+.mypandora-spreadsheet-selectpicker li {
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 4px 0;
+}
+.mypandora-spreadsheet-selectpicker li.is-selected {
+  color: #2185d0;
+  background: #ecf6fd;
+}
+.mypandora-spreadsheet-selectpicker li:hover {
+  color: #2185d0;
+  background: #ecf6fd;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: rgba(0, 0, 0, 0.4) transparent rgba(0, 0, 0, 0.4) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+  box-sizing: border-box;
+}

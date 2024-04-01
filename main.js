@@ -1,6 +1,6 @@
-import EXTEND_DATA from './public/extend-data';
-import PUBLIC_DATA from './public/public-data';
-import Spreadsheet from './src';
+import EXTEND_DATA from './public/extend-data.js';
+import PUBLIC_DATA from './public/public-data.js';
+import Spreadsheet from './lib/main.js';
 
 // 1
 const saveIcon =
